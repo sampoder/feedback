@@ -1,4 +1,8 @@
-<div class="flex bg-blue-600" style="margin: -1rem; padding: 0.6rem 1rem; margin-bottom: 1rem;">
+<div id="navbar" class="flex {% if submitted == True %}
+bg-green-600
+{% else %}
+bg-blue-600
+{% endif %}" style="margin: -1rem; padding: 0.6rem 1rem; margin-bottom: 1rem;">
   <div class="font-semibold flex-grow flex items-center text-white">
     <img
       src="https://cloud-ezksrr8rf-hack-club-bot.vercel.app/0boat_large__black_.jpg"
@@ -25,3 +29,13 @@
     </span>
   </div>
 </div>
+
+{% if submitted == True %}
+<script>
+  setTimeout(function(){
+      document.getElementById('navbar').classList.add("bg-blue-600");
+      document.getElementById('navbar').classList.remove("bg-green-600");
+      document.querySelector("meta[name=theme-color]").setAttribute("content", "#2563eb");
+  }, 2000);
+</script>
+{% endif %}

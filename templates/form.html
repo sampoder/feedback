@@ -1,4 +1,4 @@
-<form class="relative">
+<form class="relative" method="post">
   <input
     class="
       focus:border-light-blue-500
@@ -14,8 +14,9 @@
     "
     type="text"
     placeholder="Subject"
-    id="search"
-    name="search"
+    id="subject"
+    name="subject"
+    required
   />
 
   <textarea
@@ -34,9 +35,10 @@
     "
     type="text"
     placeholder="Message / Feedback / Request"
-    id="search"
-    name="search"
+    id="message"
+    name="message"
     rows="16"
+    required
   ></textarea>
 
   <input
