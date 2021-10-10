@@ -1,2 +1,3 @@
 static/tailwind-dev.css
 node_modules
+!.env
